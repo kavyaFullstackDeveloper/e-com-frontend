@@ -4,8 +4,10 @@ import { useContext } from 'react'
 import { ShopContext } from '../../Context/ShopContext'
 import remove_icon from '../assets/cart_cross_icon.png'
 
+
 const CartItems = () => {
   const {getTotalCartAmount,all_product,cartItem,removeFromCart} = useContext(ShopContext)
+  
 
   return (
     <div className='cartitems'>
@@ -53,7 +55,9 @@ const CartItems = () => {
                 <h3>Total</h3>
                 <h3>${getTotalCartAmount()}</h3>
               </div>
-              <button>PROCEED TO CHECKOUT</button>
+              <button>
+                PROCEED TO CHECKOUT
+              </button>
               </div>
               </div>
 
